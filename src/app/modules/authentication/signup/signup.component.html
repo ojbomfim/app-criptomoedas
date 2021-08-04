@@ -1,0 +1,35 @@
+<div class="auth">
+  <section>
+    <div>
+      <form>
+        <h1>
+          {{ 'SIGNUP.SIGN_UP' | translate }}
+        </h1>
+        <input placeholder="{{ 'SIGNUP.REFFER_TOKEN' | translate }}" type="text">
+        <input placeholder="{{ 'SIGNUP.YOUR_FULL_NAME' | translate }}" type="text">
+        <input placeholder="{{ 'SIGNUP.PHONE' | translate }}" type="text">
+        <input placeholder="{{ 'SIGNUP.EMAIL' | translate }}" type="text">
+        <input placeholder="{{ 'SIGNUP.PASSWORD' | translate }}" type="text">
+        <input placeholder="{{ 'SIGNUP.CONFIRM_PASSWORD' | translate }}" type="text">
+        <input placeholder="{{ 'SIGNUP.CHOOSE_LANGUAGE' | translate }}" type="text">
+        <input id="rememberme" type="checkbox"> <label for="rememberme">{{ 'SIGNUP.ACCEPT' | translate }} <a href="">{{ 'SIGNUP.TERMS_CONDITIONS' | translate }}</a></label>
+      </form>
+      <div>
+        <div class="buttons">
+          <button>{{ 'SIGNUP.SIGN_UP' | translate }}</button>
+        </div>
+      </div>
+    </div>
+    <p>
+      <span> {{ 'SIGNUP.HAVE_ACCOUNT' | translate }} <a [routerLink]="['/authentication/login']">{{ 'SIGNUP.SIGN_IN' | translate }}</a> </span>
+
+    </p>
+
+    <p>
+      <span>{{ 'SIGNUP.TERMS1' | translate }}</span>
+      <a>{{ 'SIGNUP.TERMS2' | translate }}</a>
+
+    </p>
+  </section>
+
+</div>

@@ -1,0 +1,138 @@
+@import '../../../../stylus/light/_color';
+@import '../../../../stylus/_variables';
+
++media-min(1px)
+  .menu-principal
+    width 220px
+    height 100%
+    .menu-item
+       padding-left 40px
+
++media-max(screen-md)
+  .card-profile
+    width: 80px !important
+  .menu-body
+    width: 80px !important
+  .menu-principal
+    width 80px
+    height 100%
+
+    .menu-item
+      padding-left 30px
+      .item-title
+        display none
+
+
+.name-profile
+  color: white
+
+.menu-principal.toggle-sm
+  width 80px
+  height 100%
+
+  .card-profile
+    width: 80px
+
+  .menu-body
+    width: 80px
+
+  .menu-item
+    padding-left 30px
+    .item-title
+      display none
+
+
+
+.menu-principal
+    background black
+    transition all .5s
+    min-height 100vh 
+
+    .menu-body
+      position fixed
+      top 300px
+      width: 220px
+
+
+    .card-profile
+      width: 220px
+      position fixed
+      padding 150px 10px 50px
+      text-align center
+      font-size 12px
+      color: white
+      border-bottom 1px solid grey-1
+      
+
+      img
+        display table
+        max-width 48px
+        margin 10px auto 15px
+        border-radius 50%
+
+
+      p:nth-child(3)
+        font-size 18px
+        font-weight bold
+        margin-bottom -5px
+
+
+
+    ul
+      padding-top 40px
+      padding-bottom 20px
+      &.submenu
+        padding-left 20px
+        padding-top 0px !important
+
+      .menu-item
+        padding-top 16px
+        padding-bottom 16px
+        padding-right 10px 
+        display flex
+        width 100%
+        cursor pointer
+        color white
+        font-size 14px
+        transition 0.5s all
+
+        i, fa-icon 
+          padding-right 10px
+          font-size 18px
+
+        &:hover:not(.active)
+          background-color orange
+          color white
+
+        &:hover i, &.active i, &:hover fa-icon, &.active fa-icon
+          font-weight 400
+
+.toggle-menu
+  position fixed
+  left 204px
+  height 25px
+  width 25px
+  bottom 90px 
+  cursor pointer
+  background #F7FAFF 0% 0% no-repeat
+  box-shadow 0px 1px 5px #838a8f58
+  transition left  .5s
+  &-icon
+    font-size: 25px
+
+.toggle-sm
+  .toggle-menu
+    left 64px
+  ul.submenu
+    padding-left 0px
+
+.toggle-menu 
+  transform rotate(0)
+  transition 0.5s
+  color: white
+  +media-max(screen-md)
+    display none
+
+.toggle-menu.icon-right 
+  transform: rotate(+180deg)
+

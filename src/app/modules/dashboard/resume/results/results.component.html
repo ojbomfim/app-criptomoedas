@@ -1,0 +1,61 @@
+<ng-container *ngIf="!loadingResults">
+	<table class="text-align-center">
+		<caption>{{ 'RESULTS.RESULTS' | translate }}</caption>
+		<tr>
+			<th (click)="activeMenu()" [ngClass]="{active: active}">{{ 'RESULTS.TODAY' | translate }}</th>
+			<th (click)="activeMenu()" [ngClass]="{active: !active}">{{ 'RESULTS.TOTALS' | translate }}</th>
+		</tr>
+		<tr>
+			<td>{{today?.percentage}} %</td>
+			<td>{{totals?.percentage}} %</td>
+		</tr>
+		<ng-container *ngIf="active">
+			<tr>
+				<td>{{ 'RESULTS.INITIAL' | translate }}
+				</td>
+				<td>{{today?.inicial | currency : 'USD':'symbol-narrow':'1.2-2'}}</td>
+			</tr>
+			<tr>
+				<td>{{ 'RESULTS.FEES' | translate }}</td>
+				<td>{{today?.fees | currency : 'USD':'symbol-narrow':'1.2-2'}}</td>
+			</tr>
+			<tr>
+				<td>{{ 'RESULTS.GROSS' | translate }}</td>
+				<td>{{today?.gross_profit | currency : 'USD':'symbol-narrow':'1.2-2'}}</td>
+			</tr>
+			<tr>
+				<td>{{ 'RESULTS.NET_PROFIT' | translate }}</td>
+				<td>{{today?.net_profit | currency : 'USD':'symbol-narrow':'1.2-2'}}</td>
+			</tr>
+			<tr>
+				<td>{{ 'RESULTS.POSITION' | translate }}</td>
+				<td>{{today?.total | currency : 'USD':'symbol-narrow':'1.2-2'}}</td>
+			</tr>
+		</ng-container>
+		<ng-container *ngIf="!active">
+			<tr>
+				<td>{{ 'RESULTS.INITIAL' | translate }}
+				</td>
+				<td>{{totals?.inicial | currency : 'USD':'symbol-narrow':'1.2-2'}}</td>
+			</tr>
+			<tr>
+				<td>{{ 'RESULTS.FEES' | translate }}</td>
+				<td>{{totals?.fees | currency : 'USD':'symbol-narrow':'1.2-2'}}</td>
+			</tr>
+			<tr>
+				<td>{{ 'RESULTS.GROSS' | translate }}</td>
+				<td>{{totals?.gross_profit | currency : 'USD':'symbol-narrow':'1.2-2'}}</td>
+			</tr>
+			<tr>
+				<td>{{ 'RESULTS.NET_PROFIT' | translate }}</td>
+				<td>{{totals?.net_profit | currency : 'USD':'symbol-narrow':'1.2-2'}}</td>
+			</tr>
+			<tr>
+				<td>{{ 'RESULTS.POSITION' | translate }}</td>
+				<td>{{totals?.total | currency : 'USD':'symbol-narrow':'1.2-2'}}</td>
+			</tr>
+		</ng-container>
+	</table>
+
+</ng-container>
+<loading [loading]=loadingResults></loading>

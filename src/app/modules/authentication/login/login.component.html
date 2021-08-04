@@ -1,0 +1,40 @@
+<div class="auth">
+	<section>
+		<div class="imagem">
+			<img src="\assets\svg\exTrading.io.svg" alt="Logo" />
+		</div>
+		<div>
+			<form [formGroup]="loginForm" (change)='setRememberme()'>
+				<h1>
+					{{ 'SIGNIN.SIGN_IN' | translate }}
+				</h1>
+				<input formControlName="user_name" placeholder="{{ 'SIGNIN.YOUR_EMAIL' | translate }}" type="email">
+				<small class="text-vermelho-escuro" appMensagensErrosForms [control]="loginForm.get('user_name')"></small>
+
+				<input formControlName="password" placeholder="{{ 'SIGNIN.YOUR_PASSWORD' | translate }}" type="password">
+				<small class="text-vermelho-escuro" appMensagensErrosForms [control]="loginForm.get('password')"></small>
+
+				<input [formControl]="rememberme" id="rememberme" type="checkbox"> <label for="rememberme">{{ 'SIGNIN.REMENBER_ME' | translate }}
+				</label>
+			</form>
+			<div class="align">
+				<div class="buttons">
+					<button (click)=login()>
+						<btn-loading [loading]="loadingButton"></btn-loading>
+						<ng-container *ngIf="!loadingButton">{{ 'SIGNIN.LOGIN' | translate }}</ng-container>
+					</button>
+					<button (click)=signup()>{{ 'SIGNIN.SIGN_UP' | translate }}</button>
+				</div>
+				<a [routerLink]="['/recovery-password/id']" routerLinkActive="router-link-active">{{ 'SIGNIN.FORGOT_PASSWORD' | translate }}</a>
+			</div>
+		</div>
+
+
+		<p>
+			<span>{{ 'SIGNIN.TERMS1' | translate }}</span>
+			<a>{{ 'SIGNIN.TERMS2' | translate }}</a>
+
+		</p>
+	</section>
+
+</div>

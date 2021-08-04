@@ -1,0 +1,58 @@
+background-white= #F7FAFF
+text-color = #292828
+grey = #D5E6FE
+grey-1 = #E0E0E0
+grey-2 =#EDF1F4
+blue = #1F45E5
+blue-1 = #1E40D1
+blue-3= #121E52
+
+green = #00BF49
+green-light=#EBFFF1
+
+
+red= #E53935
+orange= #F37435
+orange-1=#FF4E00
+orange-0=#E6C1AE
+
+primary = blue
+secundary = orange
+tertiary = black
+success = green
+danger = #E53935
+
+colors = {
+  primary:primary
+  secundary:secundary
+  tertiary:tertiary
+  success:success
+  danger:danger
+}
+
+colorSecond ={
+  primary: blue-1
+  secundary: orange-1
+  tertiary: black-1
+  success: mix(success, white, 20%)
+  danger: mix(danger, white, 20%)
+}
+
+colorContrast ={
+  primary: white
+  secundary: white
+  success: white
+  danger: white
+}
+
+
+for name, value in colors
+  .color-{name}
+    color: value
+
+
+for name, value in colors
+  .bg-{name}
+    background-color value
+    color: colorContrast[name]
+

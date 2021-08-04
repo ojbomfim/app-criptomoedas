@@ -1,0 +1,143 @@
+<nav class="menu-principal" [ngClass]="{'toggle-sm':toggleMenu}">
+    <div class="card-profile">
+        <img src="assets/img/user-default2.png" alt="person" />
+        <h3>John Dear</h3>
+    </div>
+    <div class="menu-body">
+        <ul>
+            <ng-container *ngIf="!isSupport">
+                <li [routerLink]="['/dashboard/resume']" *ngIf="!activeUserRoute">
+                    <span class="menu-item">
+                        <i class="material-icons">dashboard</i>
+                        <span class="item-title">Início</span>
+                    </span>
+                </li>
+                <li *ngIf="activeUserRoute">
+                    <span class="menu-item" [routerLink]="['/dashboard/resume']">
+                        <i class="bs-icon bs-dashboard"></i>
+                        <span class="item-title">Início</span>
+                    </span>
+                    <ul class="submenu" *ngIf="activeUserRoute">
+                        <li [routerLink]="['/painel/user/'+activeUserId]">
+                            <span class="menu-item">
+                                <i class="bs-icon bs-user"></i>
+                                <span class="item-title">Usuário</span>
+                            </span>
+                        </li>
+                        <li [routerLink]="['/painel/user/'+activeUserId+'/plan']">
+                            <span class="menu-item">
+                                <fa-icon [icon]="faUsersCog"></fa-icon>
+                                <span class="item-title">Plano</span>
+                            </span>
+                        </li>
+                        <li [routerLink]="['/painel/user/'+activeUserId+'/faturamento']">
+                            <span class="menu-item">
+                                <i class="bs-icon bs-medal"></i>
+                                <span class="item-title">Faturamento</span>
+                            </span>
+                        </li>
+                        <li [routerLink]="['/painel/user/'+activeUserId+'/cobranca']">
+                            <span class="menu-item">
+                                <i class="bs-icon bs-medal"></i>
+                                <span class="item-title">Cobranca</span>
+                            </span>
+                        </li>
+                    </ul>
+                </li>
+                <li [routerLink]="['/dashboard/my-profile']" *ngIf="!activeUserRoute">
+                    <span class="menu-item">
+                        <i class="material-icons">person</i>
+                        <span class="item-title">Minha Conta</span>
+                    </span>
+                </li>
+                <li [routerLink]="['/dashboard/customers']" *ngIf="!activeUserRoute">
+                    <span class="menu-item">
+                        <i class="material-icons">people</i>
+                        <span class="item-title">Clientes</span>
+                    </span>
+                </li>
+
+                <li [routerLink]="['/dashboard/accounts']" *ngIf="!activeUserRoute">
+                    <span class="menu-item">
+                        <i class="material-icons">manage_accounts</i>
+                        <span class="item-title">Contas</span>
+                    </span>
+                </li>
+            </ng-container>
+            <li [routerLink]="['/dashboard/settings']" *ngIf="!activeUserRoute">
+                <span class="menu-item">
+                    <i class="material-icons">settings</i>
+                    <span class="item-title">Configurações</span>
+                </span>
+            </li>
+
+            <li [routerLink]="['/dashboard/strategies']" *ngIf="isSupport">
+                <span class="menu-item">
+                    <i class="material-icons">query_stats</i>
+                    <span class="item-title">Estratégias</span>
+                </span>
+            </li>
+            <li [routerLink]="['/dashboard/exchanges']" *ngIf="!activeUserRoute">
+                <span class="menu-item">
+                    <i class="material-icons">paid</i>
+                    <span class="item-title">ExChanges</span>
+                </span>
+            </li>
+        </ul>
+    </div>
+    <div class="toggle-menu" (click)="toggleMenu=!toggleMenu" [ngClass]="{'icon-right':toggleMenu}">
+        <i class="material-icons toggle-menu-icon bs-circle-left">circle</i>
+    </div>
+    <div class="toggle-menu" (click)="toggleMenu=!toggleMenu" [ngClass]="{'icon-right':toggleMenu}">
+        <i class="material-icons color-tertiary toggle-menu-icon bs-circle-left">navigate_before</i>
+    </div>
+
+</nav>
+
+
+<!-- <div class="page-container">
+
+    <div class="sidebar">
+
+        <div class="list-account">
+
+            <img class="img-account" src="assets/img/avatar.png">
+
+            <div class="name-account">
+                John Dier
+            </div>
+
+            <a routerLink="/dashboard/my-profile" routerLinkActive="selected" class="list-item">
+                <i class="material-icons">person</i>
+                Meu Perfil
+            </a>
+        </div>
+
+        <div class="list-items">
+            <a routerLink="/dashboard/resume" class="list-item">
+                <i class="material-icons">home</i>
+                Home
+            </a>
+            <a routerLink="/dashboard/customers" routerLinkActive="selected" class="list-item">
+                <i class="material-icons">people</i>
+                Clientes
+            </a>
+            <a routerLink="/dashboard/accounts" routerLinkActive="selected" class="list-item">
+                <i class="material-icons">manage_accounts</i>
+                Contas
+            </a>
+            <a routerLink="/dashboard/settings" routerLinkActive="selected" class="list-item">
+                <i class="material-icons">settings</i>
+                Configurações
+            </a>
+            <a routerLink="/dashboard/strategies" routerLinkActive="selected" class="list-item">
+                <i class="material-icons">query_stats</i>
+                Estratégias
+            </a>
+            <a routerLink="/dashboard/exchanges" routerLinkActive="selected" class="list-item">
+                <i class="material-icons">paid</i>
+                ExChanges
+            </a>
+        </div>
+    </div>
+</div> -->

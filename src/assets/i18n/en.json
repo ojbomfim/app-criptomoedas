@@ -1,0 +1,121 @@
+    {
+    "PROFILE" : {
+        "MY_PROFILE": "My profile",
+        "PROFILE_INFORMATION": "Your profile information",
+        "NAME": "Name",
+        "EMAIL": "Email",
+        "PASSWORD": "Password",
+        "NEW_PASSWORD": "New password",
+        "CONF_NEW_PASSWORD": "Confirm new password",
+        "SAVE_CHANGES": "Save changes"  
+    
+    },
+        
+    "SIGNIN" : {
+        "SELECT": "Select Language",
+        "SIGN_IN": "Sign In",
+        "REMENBER_ME": "Remenber me",
+        "LOGIN": "Login",
+        "SIGN_UP": "Sign Up",
+        "FORGOT_PASSWORD": "Forgot password?",
+        "TERMS1": "By Signing up, you agree yo our",
+        "TERMS2": "Terms and Conditions & Privacy Policy",
+        "YOUR_EMAIL": "Your Email",
+        "YOUR_PASSWORD": "Your Password",
+            
+            "AUTHENTICATION" : {
+                "TEXT_AUTH": "A few more clicks to sign in to your account."
+            }
+    },
+
+    "SIGNUP" : {
+        "SIGN_UP": "Sign Up",
+        "REFFER_TOKEN" : "Reffer token (deixe em branco se você não tiver)",
+        "YOUR_FULL_NAME" : "Your Full Name",
+        "PHONE" : "Phone (optional)",
+        "EMAIL": "Email",
+        "PASSWORD": "Password",
+        "CONFIRM_PASSWORD": "Confirm Password",
+        "ACCEPT": "Accept",
+        "TERMS_CONDITIONS": "Terms and Conditions",
+        "CHOOSE_LANGUAGE": "Choose a language",
+        "HAVE_ACCOUNT": "Already have an account?",
+        "SIGN_IN": "Sing In",
+        "TERMS1": "By Signing up, you agree yo our",
+        "TERMS2": "Terms and Conditions & Privacy Policy"
+    },
+
+    "RECOVERY_PASSWORD" : {
+        "PASS_ACESS" : "Recover your Account Password",
+        "PASS_LINK" : "A recovery link will be send to your email account.",
+        "SEND_LINK" : "Send me the link",
+        "YOUR_EMAIL": "Your Email",
+        "SIGN_IN": "Sign In",
+        "SIGN_IN_TO": "to your account"
+    },
+
+    "HEADER" : {
+        "LOG_OUT" : "Log Out",
+
+            "MENU" : {
+                "DASH": "Dashboard",
+                "HELP": "Help"
+            }
+        
+    },
+
+    "RESUME" : {
+        "OVERVIEW" : "Overview",
+        "WELCOME" : "Welcome to your profiting reports",
+        "CLIENT" : "Client",
+        "STRATEGY" : "Strategy",
+        "LAST_UPDATE" : "Last Update",
+        "INITIAL" : "Initial",
+        "POSITION" : "Position",
+        "BOUGHT_AVERAGE" : "Bought Average Quantity and Price (BTC)",
+        "OPEN_ORDERS" : "Open Orders",
+        "TRADES_BUY" : "Total Trades Buy",
+        "TRADES_SELL" : "Total Trades Sell",
+        "CLOSED_TRADE" : "Closed Trade Trade",
+        "AVERAGE_TRADE" : "Average Spread/Trade"
+
+    },
+
+    "AVERAGE_QUALITY" : {
+        "QUANTITY" : "Quantity",
+        "PRICE" : "Average Price",
+        "ACTUAL" : "Actual BTC price",
+        "FREE" : "Free"
+
+    },
+
+    "PROFIT" : {
+        "PROFIT_BTC" : "Profit (%) X BTC (%)",
+        "GAINS" : "Gains",
+        "POSITION" : "Position",
+        "TIME" : "Time",
+        "LAST_PRICE" : "Last BTC price",
+        "CHANGE" : "24h Change",
+        "HIGH" : "24h High",
+        "LOW" : "24h Low",
+        "HOURS" : "12 Hours",
+        "WEEKS" : "4 Weeks",
+        "MONTHS" : "3 Months"
+
+    },
+
+    "ROBOTS" : {
+        "RUNNING" : "Running Since",
+        "TIME" : "Time running",
+        "ROBOTS" : "Robots",
+        "ESTRATEGIES" : "Estrategies",
+        "USAGE" : "Principal Usage"
+
+    },
+
+    "LOADINGS" : {
+        "LOAD" : "Please Hold! We're Loading..."
+        
+    }
+
+}

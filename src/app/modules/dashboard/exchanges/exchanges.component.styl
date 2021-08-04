@@ -1,0 +1,153 @@
+:host ::ng-deep {
+    .p-paginator {
+        .p-paginator-current {
+            margin-left: auto
+        }
+    }
+    
+    .p-progressbar {
+        height: .5rem
+        background-color: #D8DADC
+    
+        .p-progressbar-value {
+            background-color: #607D8B
+        }
+    }
+    
+    .table-header {
+        display: flex
+        justify-content: space-between
+    }
+    
+    .p-calendar .p-datepicker {
+        min-width: 25rem
+    
+        td {
+            font-weight: 400
+        }
+    }
+    
+    .p-datatable.p-datatable-customers {
+        .p-datatable-header {
+            padding: 1rem
+            text-align: left
+            font-size: 1.5rem
+        }
+    
+        .p-paginator {
+            padding: 1rem
+        }
+    
+        .p-datatable-thead > tr > th {
+            text-align: left
+        }
+    
+        .p-datatable-tbody > tr > td {
+            cursor: auto
+        }
+    
+        .p-dropdown-label:not(.p-placeholder) {
+            text-transform: uppercase
+        }
+    }
+    
+    /* Responsive */
+    .p-datatable-customers .p-datatable-tbody > tr > td .p-column-title {
+        display: none
+    }
+}
+
+@media screen and (max-width: 960px) {
+    :host ::ng-deep {
+        .p-datatable {
+            &.p-datatable-customers {
+                .p-datatable-thead > tr > th,
+                .p-datatable-tfoot > tr > td {
+                    display: none !important
+                }
+    
+                .p-datatable-tbody > tr {
+                    border-bottom: 1px solid var(--layer-2);
+    
+                    > td {
+                        text-align: left
+                        display: block
+                        border: 0 none !important
+                        width: 100% !important
+                        float: left
+                        clear: left
+                        border: 0 none
+    
+                        .p-column-title {
+                            padding: .4rem
+                            min-width: 30%
+                            display: inline-block
+                            margin: -.4rem 1rem -.4rem -.4rem
+                            font-weight: bold
+                        }
+    
+                        .p-progressbar {
+                            margin-top: .5rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+
+:host
+	display flex
+	flex 1
+	flex-direction column
+	max-width 100vw
+	margin 20px 1px
+
+	h1	
+			top: 282px
+			left: 467px
+			// width: 148px
+			height: 34px
+			text-align: left
+			font: bold 20px Montserrat
+			letter-spacing: 0px
+			color: #495057
+			opacity: 1
+			// margin-bottom 6px
+
+		h4	
+			top: 282px
+			left: 467px
+			width: 148px
+			height: 34px
+			text-align: left
+			font: bold 28px/34px Montserrat
+			letter-spacing: 0px
+			color: #000A12
+			opacity: 1
+			margin-bottom 20px
+		h2	
+			top: 329px
+			left: 467px
+			width: 219px
+			height: 22px
+			text-align: left
+			font: normal normal medium 18px/22px Montserrat
+			letter-spacing: 0px
+			color: #000A12
+			opacity: 1
+			margin-bottom 36px
+
+		h3	
+			top: 393px
+			left: 467px
+			width: 100%
+			height: 18px
+			text-align: left
+			font: normal 14px/18px Montserrat
+			letter-spacing: 0px
+			color: #2D2C2E
+			opacity: 1
+			margin-bottom -5px

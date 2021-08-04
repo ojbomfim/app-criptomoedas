@@ -1,0 +1,132 @@
+    {
+    "PROFILE" : {
+        "MY_PROFILE": "Meu perfil",
+        "PROFILE_INFORMATION": "Informações do seu perfil",
+        "NAME": "Nome",
+        "EMAIL": "Email",
+        "PASSWORD": "Senha",
+        "NEW_PASSWORD": "Nova senha",
+        "CONF_NEW_PASSWORD": "Confirmar nova senha",
+        "SAVE_CHANGES": "Salvar Alterações" 
+    },
+    
+    "SIGNIN" : {
+        "SELECT": "Selecionar Linguagem",
+        "SIGN_IN": "Entrar",
+        "REMENBER_ME": "Lembrar-me",
+        "LOGIN": "Login",
+        "SIGN_UP": "Inscrever-se",
+        "FORGOT_PASSWORD": "Esqueceu a senha?",
+        "TERMS1": "Ao se inscrever, você concorda com os",
+        "TERMS2": "Termos e Condições e Política de Privacidade",
+        "YOUR_EMAIL": "Seu Email",
+        "YOUR_PASSWORD": "Sua Senha",
+            
+            "AUTHENTICATION" : {
+                "TEXT_AUTH": "Mais alguns cliques para fazer login em sua conta."
+            }
+    },
+
+    "SIGNUP" : {
+        "SIGN_UP": "Inscrever-se",
+        "REFFER_TOKEN" : "Reffer token (deixe em branco se você não tiver)",
+        "YOUR_FULL_NAME" : "Seu nome completo",
+        "PHONE" : "Telefone (opcional)",
+        "EMAIL": "Email",
+        "PASSWORD": "Senha",
+        "CONFIRM_PASSWORD": "Confirme sua Senha",
+        "ACCEPT": "Aceitar",
+        "TERMS_CONDITIONS": "Termos e Condições",
+        "CHOOSE_LANGUAGE": "Escolha um idioma",
+        "HAVE_ACCOUNT": "Já tem uma conta?",
+        "SIGN_IN": "Entrar",
+        "TERMS1": "Ao se inscrever, você concorda com os",
+        "TERMS2": "Termos e Condições e Política de Privacidade"
+    },
+
+    "RECOVERY_PASSWORD" : {
+        "PASS_ACESS" : "Recupere a senha da sua conta",
+        "PASS_LINK" : "Um link de recuperação será enviado para sua conta de e-mail.",
+        "SEND_LINK" : "Me envie o link",
+        "YOUR_EMAIL": "Seu Email",
+        "SIGN_IN": "Entrar",
+        "SIGN_IN_TO": "para sua conta"
+    },
+
+    "HEADER" : {
+        "LOG_OUT" : "Sair",
+
+            "MENU" : {
+                "DASH": "Painel",
+                "HELP": "Ajuda"
+            }
+        
+    },
+
+    "RESUME" : {
+        "OVERVIEW" : "Visão geral",
+        "WELCOME" : "Bem-vindo aos seus relatórios de lucros",
+        "CLIENT" : "Cliente",
+        "STRATEGY" : "Estratégia",
+        "LAST_UPDATE" : "Última atualização",
+        "INITIAL" : "Inicial",
+        "POSITION" : "Posição",
+        "BOUGHT_AVERAGE" : "Quantidade e preço médio comprado (BTC)",
+        "OPEN_ORDERS" : "Pedidos em Aberto",
+        "TRADES_BUY" : "Total de Negociações de Compra",
+        "TRADES_SELL" : "Total de Negociações de Venda",
+        "CLOSED_TRADE" : "Comércio Fechado",
+        "AVERAGE_TRADE" : "Média Spread/Trade"
+
+    },
+
+    "AVERAGE_QUALITY" : {
+        "QUANTITY" : "Quantidade",
+        "PRICE" : "Preço médio",
+        "ACTUAL" : "Preço BTC real",
+        "FREE" : "Livre"
+
+    },
+
+    "PROFIT" : {
+        "PROFIT_BTC" : "Profit (%) X BTC (%)",
+        "GAINS" : "Ganhos",
+        "POSITION" : "Posição",
+        "TIME" : "Tempo",
+        "LAST_PRICE" : "Último preço BTC",
+        "CHANGE" : "Mudança 24h",
+        "HIGH" : "Alta 24h",
+        "LOW" : "Baixa 24h",
+        "HOURS" : "12 Horas",
+        "WEEKS" : "4 Semanas",
+        "MONTHS" : "3 Meses"
+        
+    },
+
+    "RESULTS" : {
+        "RESULTS" : "Resultados",
+        "TODAY" : "Hoje",
+        "TOTALS" : "Totais",
+        "INITIAL" : "Inicial",
+        "FEES" : "Honorários",
+        "GROSS" : "Lucro bruto",
+        "NET_PROFIT" : "Lucro líquido",
+        "POSITION" : "Posição"
+
+    },
+
+    "ROBOTS" : {
+        "RUNNING" : "Em execução desde",
+        "TIME" : "Tempo correndo",
+        "ROBOTS" : "Robôs",
+        "ESTRATEGIES" : "Estratégias",
+        "USAGE" : "Uso Principal"
+
+    },
+
+    "LOADINGS" : {
+        "LOAD" : "Por favor, espere! Estamos carregando ..."
+        
+    }
+
+}
