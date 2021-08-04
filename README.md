@@ -1,7 +1,4 @@
-# Genesis Front-end
-
-Alteracao readme
-Bem vindo ao Frontend da Genesis
+# Criptomoedas Front-end
 
 ## Tipos de commit
 
